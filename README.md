@@ -1,2 +1,2 @@
-# Useful
-Useful scripts for me
+# Libraries 
+Здесь разжевывалки для библиотек
