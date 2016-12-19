@@ -5,14 +5,14 @@
 
 
 def classtree(cls, indent):
-    print('.' * indent + cls.__name__)
-    for supercls in cls.__bases__:
-        classtree(supercls, indent + 3)
+    print('.' * indent + cls.__name__) # Вывести имя класса
+    for supercls in cls.__bases__: # Рекурсивный обход всех суперклассов
+        classtree(supercls, indent + 3) # Каждый суперкласс может быть посещен более одного раза
 
 
 def instancetree(inst):
-    print('Tree of', inst)
-    classtree(inst.__class__, 3)
+    print('Tree of', inst) # Показать экземпляр
+    classtree(inst.__class__, 3) # Взойти к его классу
 
 
 def selftest():
